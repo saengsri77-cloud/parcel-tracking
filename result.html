@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TH POST – ผลการติดตามพัสดุ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <span class="brand">TH POST – ผลการติดตามพัสดุ</span>
+  <div class="lang">
+    <button onclick="setLang('th')">ไทย</button>
+    <button onclick="setLang('en')">EN</button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="card">
+    <h2 id="title">ผลการติดตามพัสดุ</h2>
+
+    <div id="resultArea" class="hidden">
+      <table>
+        <tr><td class="label" id="labelCode">เลขพัสดุ</td><td id="showCode"></td></tr>
+        <tr><td class="label" id="labelProvince">จังหวัด</td><td id="showProvince"></td></tr>
+        <tr><td class="label" id="labelDistrict">อำเภอ</td><td id="showDistrict"></td></tr>
+        <tr><td class="label" id="labelStatus">สถานะ</td><td id="showStatus"></td></tr>
+        <tr><td class="label" id="labelUpdated">อัปเดตล่าสุด</td><td id="showUpdated"></td></tr>
+      </table>
+
+      <button class="secondary" onclick="goBack()">กลับหน้าหลัก</button>
+    </div>
+
+    <div id="loading">กำลังค้นหาข้อมูล...</div>
+  </div>
+</div>
+
+<script src="result.js"></script>
+</body>
+</html>
