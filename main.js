@@ -22,6 +22,6 @@ function goResult() {
   }
   localStorage.setItem("trackingCode", code);
 
-  // 👉 เปลี่ยนเป็นหน้า result ของ GitHub Pages ในขั้นตอนต่อไป
+  // 👉 ลิงก์ไปหน้า result บน GitHub Pages
   window.location.href = "result.html";
 }
