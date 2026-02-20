@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TH POST – ระบบติดตามพัสดุ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <span class="brand">TH POST – ระบบติดตามพัสดุ</span>
+    <div class="lang">
+      <button onclick="setLang('th')">ไทย</button>
+      <button onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2 id="title">ระบบติดตามพัสดุ</h2>
+
+      <label id="label">เลขพัสดุ</label>
+      <input id="trackingInput" type="text" placeholder="เช่น TH015312000001L" />
+
+      <p class="hint" id="hint">กรุณากรอกเลขพัสดุ 15 หลัก</p>
+
+      <button class="primary" onclick="goResult()" id="btn">ค้นหา</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
