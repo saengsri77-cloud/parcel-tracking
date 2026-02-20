@@ -67,3 +67,41 @@ input {
   font-weight: bold;
   cursor: pointer;
 }
+.hidden {
+  display: none;
+}
+
+h2 {
+  color: #0a3d91;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  margin-top: 12px;
+  border-collapse: collapse;
+}
+
+td.label {
+  font-weight: bold;
+  color: #0a3d91;
+  width: 40%;
+  padding: 8px 4px;
+}
+
+td {
+  padding: 8px 4px;
+  border-bottom: 1px solid #eee;
+}
+
+.secondary {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 999px;
+  border: none;
+  background: #e5e7eb;
+  color: #0a3d91;
+  font-weight: bold;
+  cursor: pointer;
+}
