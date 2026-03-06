@@ -1,4 +1,4 @@
-const SHEET_URL = "ใส่ลิงก์ opensheet ของคุณ";
+const SHEET_URL = "https://opensheet.elk.sh/1id8lPtNHASMmv_LBJ2nTUkRlcWXaPlnVUzL1jzPIsSA/ParcelData";
 
 function goBack(){
 window.location.href="index.html";
@@ -45,28 +45,30 @@ alert("โหลดข้อมูลไม่สำเร็จ");
 
 });
 
-function renderTimeline(status){
+function renderTimeline(state){
 
-if(status=="รับพัสดุ"){
+if(state==1){
 document.getElementById("s1").classList.add("done");
 }
 
-if(status=="คัดแยก"){
+if(state==2){
 document.getElementById("s1").classList.add("done");
 document.getElementById("s2").classList.add("done");
 }
 
-if(status=="นำจ่าย"){
+if(state==3){
 document.getElementById("s1").classList.add("done");
 document.getElementById("s2").classList.add("done");
 document.getElementById("s3").classList.add("done");
 }
 
-if(status=="นำจ่ายสำเร็จ"){
+if(state==4){
 document.getElementById("s1").classList.add("done");
 document.getElementById("s2").classList.add("done");
 document.getElementById("s3").classList.add("done");
 document.getElementById("s4").classList.add("done");
+}
+
 }
 
 }
