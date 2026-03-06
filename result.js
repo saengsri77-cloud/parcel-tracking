@@ -35,7 +35,7 @@ document.getElementById("showDistrict").innerText = found.district || "-";
 document.getElementById("showStatus").innerText = found.status_text || "-";
 document.getElementById("showUpdated").innerText = found.updated_at || "-";
 
-renderTimeline(found.state);
+renderTimeline(Number(found.state) || 1);
 
 }catch(err){
 
