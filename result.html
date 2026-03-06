@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TH POST – ผลการติดตามพัสดุ</title>
+<title>TH POST - ผลการติดตามพัสดุ</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,27 +16,40 @@
 <div class="container">
 <div class="card">
 
-<h2>ผลการติดตามพัสดุ</h2>
+<h2 id="title">ผลการติดตามพัสดุ</h2>
 
 <div id="loading">กำลังค้นหาข้อมูล...</div>
 
 <div id="resultArea" class="hidden">
 
-<h3 id="showCode"></h3>
+<table>
 
-<div class="parcelBox">
+<tr>
+<td class="label">เลขพัสดุ</td>
+<td id="showCode"></td>
+</tr>
 
-<p><b>จังหวัด:</b> <span id="showProvince"></span></p>
+<tr>
+<td class="label">จังหวัด</td>
+<td id="showProvince"></td>
+</tr>
 
-<p><b>อำเภอ:</b> <span id="showDistrict"></span></p>
+<tr>
+<td class="label">อำเภอ</td>
+<td id="showDistrict"></td>
+</tr>
 
-<p><b>สถานะล่าสุด:</b> <span id="showStatus"></span></p>
+<tr>
+<td class="label">สถานะ</td>
+<td id="showStatus"></td>
+</tr>
 
-<p><b>อัปเดตล่าสุด:</b> <span id="showUpdated"></span></p>
+<tr>
+<td class="label">อัปเดตล่าสุด</td>
+<td id="showUpdated"></td>
+</tr>
 
-</div>
-
-<h3>สถานะการจัดส่ง</h3>
+</table>
 
 <div class="timeline">
 
@@ -45,7 +58,7 @@
 </div>
 
 <div id="s2" class="step">
-⚙️ อยู่ระหว่างการคัดแยก
+⚙️ คัดแยก
 </div>
 
 <div id="s3" class="step">
@@ -53,7 +66,7 @@
 </div>
 
 <div id="s4" class="step">
-✅ รับพัสดุแล้ว
+✅ นำจ่ายสำเร็จ
 </div>
 
 </div>
