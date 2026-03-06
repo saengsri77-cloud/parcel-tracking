@@ -36,6 +36,22 @@ document.getElementById("showReceiver").innerText = found["receiver_name"] || "-
 document.getElementById("showAddress").innerText = found["address_detail"] || "-";
 document.getElementById("showStatus").innerText = found.status_text || "-";
 document.getElementById("showUpdated").innerText = found.updated_at || "-";
+document.getElementById("showSize").innerText =
+(found.width_cm && found.length_cm && found.height_cm)
+? found.width_cm + " x " + found.length_cm + " x " + found.height_cm + " cm"
+: "-";
+
+document.getElementById("showWeight").innerText =
+found.weight_g ? found.weight_g + " g" : "-";
+
+document.getElementById("showStation").innerText =
+found.last_station || "-";
+
+document.getElementById("showStatus").innerText =
+found.status_text || "-";
+
+document.getElementById("showUpdated").innerText =
+found.updated_at || "-";
 
 renderTimeline(Number(found.state) || 1);
 
