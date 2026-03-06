@@ -105,3 +105,25 @@ td {
   font-weight: bold;
   cursor: pointer;
 }
+.parcelBox{
+background:#f7f7f7;
+padding:12px;
+border-radius:8px;
+margin-bottom:20px;
+}
+
+.timeline{
+margin-top:10px;
+}
+
+.step{
+padding:12px;
+margin:8px 0;
+border-left:4px solid #ccc;
+background:#fff;
+}
+
+.step.done{
+border-left:4px solid #2e7d32;
+background:#e8f5e9;
+}
