@@ -70,5 +70,3 @@ document.getElementById("s4").classList.add("done");
 }
 
 }
-
-}
