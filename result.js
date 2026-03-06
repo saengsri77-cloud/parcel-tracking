@@ -32,10 +32,10 @@ document.getElementById("resultArea").classList.remove("hidden");
 document.getElementById("showCode").innerText = found.parcel_id;
 document.getElementById("showProvince").innerText = found.province || "-";
 document.getElementById("showDistrict").innerText = found.district || "-";
-document.getElementById("showStatus").innerText = found.status || "-";
-document.getElementById("showUpdated").innerText = found.updated || "-";
+document.getElementById("showStatus").innerText = found.status_text || "-";
+document.getElementById("showUpdated").innerText = found.updated_at || "-";
 
-renderTimeline(found.status);
+renderTimeline(found.state);
 
 }catch(err){
 
