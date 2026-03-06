@@ -32,8 +32,8 @@ document.getElementById("resultArea").classList.remove("hidden");
 document.getElementById("showCode").innerText = found.parcel_id;
 document.getElementById("showProvince").innerText = found.province || "-";
 document.getElementById("showDistrict").innerText = found.district || "-";
-document.getElementById("showReceiver").innerText = found.receiver_name || "-";
-document.getElementById("showAddress").innerText = found.address_detail || "-";
+document.getElementById("showReceiver").innerText = found["receiver_name"] || "-";
+document.getElementById("showAddress").innerText = found["address_detail"] || "-";
 document.getElementById("showStatus").innerText = found.status_text || "-";
 document.getElementById("showUpdated").innerText = found.updated_at || "-";
 
