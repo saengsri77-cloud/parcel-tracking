@@ -1,41 +1,71 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TH POST – ผลการติดตามพัสดุ</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TH POST – ผลการติดตามพัสดุ</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="topbar">
-  <span class="brand">TH POST – ผลการติดตามพัสดุ</span>
-  <div class="lang">
-    <button onclick="setLang('th')">ไทย</button>
-    <button onclick="setLang('en')">EN</button>
-  </div>
+<span class="brand">TH POST – ผลการติดตามพัสดุ</span>
 </div>
 
 <div class="container">
-  <div class="card">
-    <h2 id="title">ผลการติดตามพัสดุ</h2>
+<div class="card">
 
-    <div id="resultArea" class="hidden">
-      <table>
-        <tr><td class="label" id="labelCode">เลขพัสดุ</td><td id="showCode"></td></tr>
-        <tr><td class="label" id="labelProvince">จังหวัด</td><td id="showProvince"></td></tr>
-        <tr><td class="label" id="labelDistrict">อำเภอ</td><td id="showDistrict"></td></tr>
-        <tr><td class="label" id="labelStatus">สถานะ</td><td id="showStatus"></td></tr>
-        <tr><td class="label" id="labelUpdated">อัปเดตล่าสุด</td><td id="showUpdated"></td></tr>
-      </table>
+<h2>ผลการติดตามพัสดุ</h2>
 
-      <button class="secondary" onclick="goBack()">กลับหน้าหลัก</button>
-    </div>
+<div id="loading">กำลังค้นหาข้อมูล...</div>
 
-    <div id="loading">กำลังค้นหาข้อมูล...</div>
-  </div>
+<div id="resultArea" class="hidden">
+
+<h3 id="showCode"></h3>
+
+<div class="parcelBox">
+
+<p><b>จังหวัด:</b> <span id="showProvince"></span></p>
+
+<p><b>อำเภอ:</b> <span id="showDistrict"></span></p>
+
+<p><b>สถานะล่าสุด:</b> <span id="showStatus"></span></p>
+
+<p><b>อัปเดตล่าสุด:</b> <span id="showUpdated"></span></p>
+
+</div>
+
+<h3>สถานะการจัดส่ง</h3>
+
+<div class="timeline">
+
+<div id="s1" class="step">
+📦 รับพัสดุ
+</div>
+
+<div id="s2" class="step">
+⚙️ อยู่ระหว่างการคัดแยก
+</div>
+
+<div id="s3" class="step">
+🚚 นำจ่าย
+</div>
+
+<div id="s4" class="step">
+✅ รับพัสดุแล้ว
+</div>
+
+</div>
+
+</div>
+
+<button class="secondary" onclick="goBack()">กลับหน้าหลัก</button>
+
+</div>
 </div>
 
 <script src="result.js"></script>
+
 </body>
 </html>
