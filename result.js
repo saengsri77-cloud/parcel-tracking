@@ -18,7 +18,7 @@ try{
 const response = await fetch(SHEET_URL,{cache:"no-store"});
 const data = await response.json();
 
-const found = data.find(row => row.parcel_id === code);
+const found = data.find(row => row.parcel_id.trim() === code.trim());
 
 document.getElementById("loading").style.display="none";
 
